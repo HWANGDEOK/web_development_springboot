@@ -109,6 +109,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
                 http://localhost:8080/test로 설정(TestController.java 확인)
             3) SEND 버튼 누릅니다.
             4) 200 OK인지 확인
+
+HTTP 요청 ----> TestController <----> TestService <----> MemberRepository <----> Database
+url:/test----> 프레젠테이션 계층        비지니스계층         퍼시스턴스 계층           데이터베이스
  */
 @SpringBootApplication
 public class SpringBootDeveloperApplication {
